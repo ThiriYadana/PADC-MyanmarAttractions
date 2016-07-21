@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+        android:id="@+id/lbl_login_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_medium_2"
+        android:drawableRight="@drawable/ic_clear_24dp"
+        android:background="@color/primary_bright"
+        android:textColor="@color/text_white_ish"
+        android:fontFamily="sans-serif"
+        />
+
+    <xyz.aungpyaephyo.padc.myanmarattractions.components.MMEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_login_email_hint"
+        android:layout_below="@id/lbl_login_title"
+        android:padding="@dimen/margin_medium_2"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/text_regular_2x"
+        android:textColor="@color/text_white_ish"
+        />
+
+    <xyz.aungpyaephyo.padc.myanmarattractions.components.MMEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_login_password_hint"
+        android:layout_below="@id/et_email"
+        android:padding="@dimen/margin_medium_2"
+        android:drawableRight="@drawable/ic_visibility_24dp"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/text_regular_2x"
+        android:textColor="@color/text_white_ish"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:padding="@dimen/margin_medium_2"
+        android:background="@color/accent_dark"
+        android:textColor="@color/text_white_ish"
+        android:text="@string/btn_login"
+        android:layout_margin="@dimen/margin_medium_2"
+        />
+
+    <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+        android:id="@+id/lbl_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium_2"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/btn_login"
+        android:textColor="@color/text_white_ish"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        />
+
+    <xyz.aungpyaephyo.padc.myanmarattractions.components.MMTextView
+        android:id="@+id/lbl_to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_medium_2"
+        android:paddingRight="@dimen/margin_medium_2"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/lbl_forget_password"
+        android:textColor="@color/text_white_ish"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        />
+</RelativeLayout>
