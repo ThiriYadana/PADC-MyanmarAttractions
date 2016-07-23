@@ -41,6 +41,7 @@
         android:singleLine="true"
         android:textSize="@dimen/text_regular_2x"
         android:textColor="@color/text_white_ish"
+        android:inputType="textPassword"
         />
 
     <Button
